@@ -19,8 +19,8 @@ int main(int argc, char *argv[]) {
 	bit_32 = resultado%2; 	// na prova no papel a gente da um valor e testa pra ver se vai dar certo
 	resultado = resultado/2; // ex: fazer o n valer 52 e testar
 	
-	bit_16 = resultado%2; 	// o erro est· que em nenhum momento o N È substituido, por mais que ele faÁa a primeira divisao
-	resultado = resultado/2; // em todas as outras divisıes est· sendo o 52 inicial
+	bit_16 = resultado%2; 	// o erro est√° que em nenhum momento o N √© substituido, por mais que ele fa√ßa a primeira divisao
+	resultado = resultado/2; // em todas as outras divis√µes est√° sendo o 52 inicial
 	
 	bit_8 = resultado%2;	
 	resultado = resultado/2;
@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
 	bit_2 = resultado%2;
 	resultado = resultado/2;
 	
-	// da pra deixar mais facil e curto usando laÁo de repetiÁ„o mas isso n„o ser· visto por agora.
+	// da pra deixar mais facil e curto usando la√ßo de repeti√ß√£o mas isso n√£o ser√° visto por agora.
 	
 	/* bit_8 = n%2; 0
 	resultado = n/2; 26
@@ -43,7 +43,7 @@ int main(int argc, char *argv[]) {
 	resultado = n/2;
 	
 	
-	para ficar correto, tem que trocar o n da operaÁ„o apÛs a primeira para "resultado"
+	para ficar correto, tem que trocar o n da opera√ß√£o ap√≥s a primeira para "resultado"
 	
 	
 	printf("O numero %d em binario = %d%d%d%d%d%d%d", n, 
@@ -59,7 +59,7 @@ int main(int argc, char *argv[]) {
 	printf("Insira as coordenadas do ponto P1: ");
 	scanf("(%d, %d)", &x1, &y1); // formato para ler par ordenado no scan
 	
-	// precisa lembrar que o usu·rio pode n„o entender, ent„o para isso, a entrada do usuario
+	// precisa lembrar que o usu√°rio pode n√£o entender, ent√£o para isso, a entrada do usuario
 	// colocar uma mensagem quetem que inserir as coordenadas no formato do ex: (5 , 3)
 	// pode colocar um print de leitura para confirmar se os dados que estao sendo utilizados 
 	// estao corretos 
