@@ -6,6 +6,8 @@ int main(int argc, char *argv[]) {
 	//abs refere-se a funcao modulo da matematica (valor absoluto, positivo)
 	//enquanto a % refere-se ao modulo (resto da divisao)
 	//& refere-se a endereco de memoria
+
+	//Exercicio 10
 	
 	int a, b, c, d, maior, maior_temp1, maior_temp2;
 	//poderia fazer com "unsigned int abs;", que e um valor sem atribuicao, de 0 ate um valor sem sinal
