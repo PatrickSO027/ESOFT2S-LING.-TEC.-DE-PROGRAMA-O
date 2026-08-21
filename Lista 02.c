@@ -117,5 +117,41 @@ int main () {
     
     printf("%d:%d:%d", horas, minutos, segundos);
 
+    //Exercicio 9
+
+    float horas9, velocidade_media, distancia, litros_gastos;
+
+    printf("Informe o tempo da viagem em HORAS e a velocidade media em KM/H (h km/h): ");
+    scanf("%f %f", &horas9, &velocidade_media);
+
+    distancia = horas9 * velocidade_media;
+    litros_gastos = distancia / 12;
+
+    printf("\nA quantidade de combustivel gasto na viagem e: %.3f litros", litros_gastos);
+
+    //Exercicio 10
+
+    //abs refere-se a funcao modulo da matematica (valor absoluto, positivo)
+	//enquanto a % refere-se ao modulo (resto da divisao)
+	//& refere-se a endereco de memoria
+	
+	int a, b, c, d, maior, maior_temp1, maior_temp2;
+	//poderia fazer com "unsigned int abs;", que e um valor sem atribuicao, de 0 ate um valor sem sinal
+	//e depois na conta falar que abs recebe (a-b)
+    printf("\nCalculadora do maior entre 4 numeros\n");
+	printf("\nInforme os valores a serem comparados: ");
+	scanf("%d %d %d %d", &a, &b, &c, &d);
+	
+	//conta
+	
+	maior_temp1 = (a+b+abs(a-b))/2; //compara os dois primeiros
+	maior_temp2 = (c+d+abs(c-d))/2; //compara os dois ultimos (se for impar tem que deixar uma variavel sozinha)
+	maior = (maior_temp1+maior_temp2+abs(maior_temp1-maior_temp2))/2;
+	//o segundo parenteses e para dividir todos por dois, se nao iria dividir apenas a-b por 2
+	//o problema da formula "maior = (a+b+abs(a-b))/2;" e que ela compara apenas dois valores, entao se o c for maior, ele nao vai ser considerado
+	//na comparacao, sempre faz a comparacao entre dois valores, e depois vai seguindo com dois ate terminar, sempre tem o mesmo padrao de distribuicao
+	//nao precisa comparar a-b, a-b, a-c, p2ois quando sai o resultado de um, ja garante que ele e o maior
+	printf("O maior entre |%d||%d||%d||%d| = %d", a, b, c, d, maior);
+    
     return 0;
 }
