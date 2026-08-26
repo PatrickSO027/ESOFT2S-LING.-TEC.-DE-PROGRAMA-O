@@ -14,15 +14,15 @@ int main(int argc, char *argv[]) {
 	if(a>b){
 		r = a;
 	}else
-	if (b>a){ // aqui da pra cortar e colocar um else para se não for um, vai ser outro
+	if (b>a){ // aqui da pra cortar e colocar um else para se nÃ£o for um, vai ser outro
 		r = b;
 	}
 	if (c>r){
 		r = c;
 	}
 	
-	há também uma comparação a mais, você percebe que o código tem coisa a mais
-	quando você tira algo dele e o funcionamento continua igual.
+	hÃ¡ tambÃ©m uma comparaÃ§Ã£o a mais, vocÃª percebe que o cÃ³digo tem coisa a mais
+	quando vocÃª tira algo dele e o funcionamento continua igual.
 	*/
 	
 	
