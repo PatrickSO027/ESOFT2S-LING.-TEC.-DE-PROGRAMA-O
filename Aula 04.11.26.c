@@ -4,7 +4,7 @@
 #define bandeira 9
 #define bomba 0
 
-/* vetor sÛ tem uma dimens„o, j· matriz tem duas ou mais, por isso tem mais de um colchetes */
+/* vetor s√≥ tem uma dimens√£o, j√° matriz tem duas ou mais, por isso tem mais de um colchetes */
 
 
 // aula de hj: campo minado para entender matrizes
@@ -18,27 +18,27 @@ int main(int argc, char *argv[]) {
 	int casaX, CasaY; // jogada - qual casa o usuario deseja jogar
 	int i, j;
 	
-//antes de preencher com bomba, È necess·rio limpar o vetor (tirar lixo de memÛria)	
+//antes de preencher com bomba, √© necess√°rio limpar o vetor (tirar lixo de mem√≥ria)	
 	
 	for (i = 0; i < 9; i++){
 		for (j = 0; j < 9; j++){
-			campo[i][j] = 9; //9 È o unico valor que n„o È possÌvel de se ter quando o jogo inicia
+			campo[i][j] = 9; //9 √© o unico valor que n√£o √© poss√≠vel de se ter quando o jogo inicia
 		}
 	}
 	
 	
 //preenche com bombas nosso jogo	
-	for (i = 0; i < 9; i++){ // laÁo padr„o para percorrer o vetor, da para 
+	for (i = 0; i < 9; i++){ // la√ßo padr√£o para percorrer o vetor, da para 
 //usar um para percorrer uma linha,
-//para percorrer todas, cria um outro laÁo de repetiÁ„o dentro dele
-		for (j = 0; j < 9; j++){ //se o campo n„o for quadrado, cada for vai percorrer
-//uma dist‚ncia diferente, mas È muito mais comum utilizar matriz quadradas
-//se tivesse mais uma dimens„o no campo (profundidade)
-//teria que ter mais um for e essas operaÁıes do laÁo crescem em
-//nivel exponÍncial - 10 - 100 - 1000 - 100000....
-//È bom sempre reduzir a dimensionalidade dos dados
+//para percorrer todas, cria um outro la√ßo de repeti√ß√£o dentro dele
+		for (j = 0; j < 9; j++){ //se o campo n√£o for quadrado, cada for vai percorrer
+//uma dist√¢ncia diferente, mas √© muito mais comum utilizar matriz quadradas
+//se tivesse mais uma dimens√£o no campo (profundidade)
+//teria que ter mais um for e essas opera√ß√µes do la√ßo crescem em
+//nivel expon√™ncial - 10 - 100 - 1000 - 100000....
+//√© bom sempre reduzir a dimensionalidade dos dados
 
-			if (rand()%10 == 0) //devolve um n˙mero aleatÛrio pela quantidade de ciclos (os ciclos mudam pela srand)
+			if (rand()%10 == 0) //devolve um n√∫mero aleat√≥rio pela quantidade de ciclos (os ciclos mudam pela srand)
 				campo[i][j] = 0;
 		}
 	}
@@ -46,9 +46,8 @@ int main(int argc, char *argv[]) {
 	for (i = 0; i < 9; i++){
 		printf("\t \t \t"); //tabula para deixar o campo centralizado
 		for (j = 0; j < 9; j++){
-			if (campo[i][j] == 0)printf("|9");
-			else printf ("|%d", campo[i][j]);
-			printf("|%d|", campo [i][j]);
+			if (campo[i][j] == 0)printf("|9|");
+			else printf ("|%d|", campo[i][j]);
 		}
 		printf("\n");
 	}
